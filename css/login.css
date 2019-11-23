@@ -1,0 +1,66 @@
+body{
+  margin: 0xp;
+  padding: 0px;
+  background-color: #EAECEE;
+}
+.box{
+  background-color: #fff;
+  position: absolute;
+  width:300px;
+  height: 500px;
+  padding:40px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-family: "Book Antiqua";
+}
+.logo{
+  align:center;
+  width:200px;
+  height:200px;
+}
+input[type="text"],input[type="password"]{
+  background-color: #EAECEE;
+  border: none;
+  display: block;
+  margin: 40px -10px;
+  text-align: center;
+  padding: 14px 40px;
+  width:235px;
+  outline:none;
+  transition: 0.25s;
+  font-family: "Book Antiqua";
+}
+input[type="submit"]{
+  background-color: #E74C3C;
+  border: none;
+  display: block;
+  color:white;
+  margin: 40px -10px;
+  text-align: center;
+  padding: 14px 40px;
+  width:315px;
+  outline: none;
+  transition: 0.25s;
+  font-family: "Book Antiqua";
+}
+.box input[type="submit"]:hover{
+  background:#A93226;
+}
+.box a {
+  text-align: center;
+  color: #C0392B;
+  text-decoration: none;
+  float:right;
+  font-size: 13px;
+}
+.box h1{
+  color: #C0392B;
+}
+.box label{
+  margin:2px;
+  float:left;
+  font-size:13px;
+  color:#C0392B;
+}

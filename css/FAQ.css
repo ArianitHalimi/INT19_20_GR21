@@ -1,0 +1,48 @@
+header{
+  width: 100%;
+  padding:20px;
+  text-align: center;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #333;
+}
+#logo{
+  width:120px;
+  height:30px;
+}
+main{
+  width: 100%;
+  font-family: "Book Antiqua";
+  color:#333;
+}
+.box{
+  position: absolute;
+  width:60%;
+  height: 400px;
+  padding:40px;
+  top:50%;
+  left:50%;
+  margin-top: 20px;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-family: "Book Antiqua";
+}
+main ul li{
+  list-style: none;
+  padding:20px;
+  border-top: 1px dashed #333;
+  color:#333;
+}
+main ul li:hover{
+  font-size: 1.1em;
+}
+#more{
+  border-bottom: 1px dashed #333;
+}
+footer p{
+  width: 100%;
+  color:#333;
+  position: absolute;
+  bottom:0px;
+  margin:5px;
+  text-align: center;
+}
