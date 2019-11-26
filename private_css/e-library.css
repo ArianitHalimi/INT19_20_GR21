@@ -1,0 +1,136 @@
+*{
+  font-family: "Book Antiqua";
+}
+header{
+  display: flex;
+  background-color: #2ECC71;
+  width:100%;
+}
+.logo{
+  padding:10px 20px;
+  flex: 1;
+}
+.logo img{
+  width:120px;
+  height:30px;
+}
+nav{
+  flex:2;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li img{
+  width:32px;
+  height: 32px;
+  padding:10px 10px;
+  text-align: center;
+}
+nav a{
+  text-decoration: none;
+}
+.search{
+  flex:1;
+}
+.search form {
+  display: inline-block;
+  padding:15px;
+}
+.search form input[type="text"]{
+  background-color: #2ECC71;
+  border-bottom: 1px solid #f3f3f3;
+  padding: 1px;
+  border-radius: 3px;
+  color: white;
+}
+.search form input[type="submit"]{
+  background-color: white;
+  border: 1px solid #f3f3f3;
+  color:#2ECC71;
+  border-radius: 25px;
+  padding: 0px 5px;
+}
+.search form input::placeholder{
+    color: white;
+    padding: 5px;
+}
+/* This is the end of navbar -- use this in all pages*/
+main{
+  width: 90%;
+  margin: auto;
+}
+.heading{
+  width:100%;
+  margin:40px;
+}
+.heading h1{
+  text-align: left;
+  font-size: 2em;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.heading span{
+  display: inline-block;
+}
+.heading span a{
+  text-decoration: none;
+  text-align: center;
+}
+.heading h3{
+  display: inline-block;
+  text-align: center;
+}
+.photo{
+  margin-top: 10px;
+  width: 100%;
+  height:500px;
+  background-image: url("../private_img/book_covers/main.jpg");
+}
+.book{
+  display: inline-block;
+}
+.book img{
+  width:300px;
+  height:400px;
+  margin: 10px;
+}
+.book h1{
+  text-align: center;
+}
+.submit{
+  text-align: center;
+  margin:30px;
+  padding:50px;
+}
+hr{
+  width: 100%;
+  height:5px;
+  background-color: #2ECC71;
+}
+.submit h1{
+  font-family: Helvetica;
+  padding-top:100px;
+  padding-bottom:20px;
+  font-size: 2em;
+}
+.submit p{
+  font-family: Helvetica;
+  padding:10px;
+}
+.submit form{
+  padding:30px;
+  padding-bottom: 100px;
+}
+.submit form input[type="text"]{
+  padding:15px;
+  border: 1px solid black;
+  width:300px;
+  border-radius: 25px;
+}
+.submit form input[type="submit"]{
+  padding: 15px;
+  background-color: #2ECC71;
+  color: white;
+  width:150px;
+  border-radius: 25px;
+}

@@ -1,0 +1,57 @@
+*{
+  font-family: "Book Antiqua";
+}
+header{
+  display: flex;
+  background-color: #E74C3C;
+  width:100%;
+}
+.logo{
+  padding:10px 20px;
+  flex: 1;
+}
+.logo img{
+  width:120px;
+  height:30px;
+}
+nav{
+  flex:2;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li img{
+  width:32px;
+  height: 32px;
+  padding:10px 10px;
+  text-align: center;
+}
+nav a{
+  text-decoration: none;
+}
+.search{
+  flex:1;
+}
+.search form {
+  display: inline-block;
+  padding:15px;
+}
+.search form input[type="text"]{
+  background-color: #E74C3C;
+  border-bottom: 1px solid #f3f3f3;
+  padding: 1px;
+  border-radius: 3px;
+  color: white;
+}
+.search form input[type="submit"]{
+  background-color: white;
+  border: 1px solid #f3f3f3;
+  color:#E74C3C;
+  border-radius: 25px;
+  padding: 0px 5px;
+}
+.search form input::placeholder{
+    color: white;
+    padding: 5px;
+}
+/* This is the end of navbar -- use this in all pages*/
