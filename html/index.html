@@ -2,12 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XLearn</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index.css">
   </head>
   <body>
-    <!--To Do: Responsive Design, Cookies and Storage and animation-->
+    <!--To Do: Responsive design breakpoints fix in some cases, Cookies and Storage and animation-->
     <header>
       <nav>
         <ul>
@@ -52,28 +53,40 @@
         </div>
       </div>
     </section>
-    <section>
-      <h3 id="meet_the_team">Meet the team</h3>
-      <div class="creators">
-        <div class="team">
-          <img src="../img/user1.png" alt="user1">
-          <h3>Arianit Halimi</h3>
-          <p>FullStack Developer</p>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-        </div>
-        <div class="team">
-          <img src="../img/user1.png" alt="user2">
-          <h3>Artan Vrajolli</h3>
-          <p>Full Stack Developer</p>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-        </div>
-        <div class="team">
-          <a href="MeetTheTeam.html"><img src="../img/others.png" alt="other" id="other">
-          <h3><a href="MeetTheTeam.html">See More</a></h3>
-          <p><a href="MeetTheTeam.html">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</a></p>
-        </div></a>
+    <section class="mobile">
+      <div class="img">
+        <img src="../img/mobile.jpg" alt="mobile">
+      </div>
+      <div class="side">
+        <h1>Download the mobile app</h1>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <button>Download</button>
       </div>
     </section>
-    <footer><p>XLearn&copy - All Right Reserved</p></footer>
+    <footer>
+      <div class="about">
+        <h1>About Us</h1>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+        <h3>&copy XLearn.</h3>
+        <h3>All rights reserved</h3>
+      </div>
+      <div class="contact">
+        <h1>Contact Us</h1>
+        <p>10000 Prishtine</p>
+        <p>+383 44/49 xxx xxx</p>
+        <p>info@xlearn.com</p>
+        <h1>Connect with us</h1>
+        <p>Learn more <a href="MeetTheTeam.html">here</a></p>
+      </div>
+      <div class="feedback">
+        <form class="" action="index.html" method="post">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Message">
+          <input type="submit" name="" value="Send Message">
+        </form>
+
+      </div>
+    </footer>
   </body>
 </html>

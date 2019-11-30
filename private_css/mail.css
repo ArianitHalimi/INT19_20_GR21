@@ -1,0 +1,77 @@
+header{
+  display: flex;
+  width: 100%;
+  background-color: #E74C3C;
+}
+h1{
+  font-size: 1em;
+}
+.logo{
+  flex: 1;
+  padding:10px 20px;
+}
+.logo img{
+  width:120px;
+  height:30px;
+}
+.middle{
+  flex: 2;
+}
+.middle ul li{
+  display: inline-block;
+  text-align: center;
+  padding:0.5%;
+  color: white;
+}
+.middle ul li:hover{
+  background-color: #ff7b7b;
+}
+.middle ul li img{
+  width:32px;
+  height: 32px;
+}
+.middle ul li h1{
+    font-weight: lighter;
+    font-size: 0.8em;
+}
+.profile{
+  flex:1;
+}
+.profile ul li{
+  float: right;
+  padding: 0.5%;
+  display: inline-block;
+  color:white;
+  padding-left:20px;
+  padding-right:10px;
+}
+.profile ul li img{
+  width:32px;
+  height: 32px;
+}
+.profile ul li h1{
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+.profile form {
+  display: inline-block;
+  padding:15px;
+}
+.profile form input[type="text"]{
+  background-color: #E74C3C;
+  border-bottom: 1px solid #f3f3f3;
+  padding: 1px;
+  border-radius: 3px;
+  color: white;
+}
+.profile form input[type="submit"]{
+  background-color: white;
+  border: 1px solid #f3f3f3;
+  color:#E74C3C;
+  border-radius: 25px;
+  padding: 0px 5px;
+}
+.profile form input::placeholder{
+    color: white;
+    padding: 5px;
+}

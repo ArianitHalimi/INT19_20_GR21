@@ -14,6 +14,9 @@ header nav ul li{
   margin: 5px;
   float: right;
 }
+header nav ul li:hover{
+  border-bottom: 2px solid red;
+}
 header nav ul li a{
   text-decoration: none;
   color: #333;
@@ -72,12 +75,18 @@ main{
   text-align: center;
   font-size: 2em;
   color: #333;
+  animation-name: top_to_bottom;
+  animation-duration: 4s;
+  animation-delay: -1s;
 }
 .learn {
   display: inline;
   width:25%;
   height:200px;
   text-align: center;
+  animation-name: top_to_bottom;
+  animation-duration: 3s;
+  animation-delay: -1s;
 }
 .support{
   text-align: justify;
@@ -98,44 +107,110 @@ main{
   width:160px;
   height:160px;
 }
-#meet_the_team{
-  margin-top: 40px;
-  text-align: center;
-  font-size: 2em;
-  color: #333;
+.mobile{
+  width: 100%;
 }
-.creators{
-  text-align: justify;
-  -ms-text-justify: distribute-all-lines;
-  text-justify: distribute-all-lines;
-  width:100%;
-}
-.creators>div{
-  width:32%;
-  margin-left: 10px;
-  height:400px;
-  vertical-align: middle;
+.img{
+  width: 50%;
+  height: 100%;
   display: inline-block;
-  margin-top: 20px;
-  padding-top: 120px;
-  border: 1px solid #7F7F7F;
+  vertical-align: top;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+}
+.side{
+  width:49%;
+  height: 100%;
+  display: inline-block;
   text-align: center;
-  background-color: #c3c3c3;
+  vertical-align: middle;
+}
+.side h1{
+  margin:8% 0% 2% 0%;
+  font-size: 2em;
+}
+.side p{
+  margin: 4% 3% 2% 5%;
+}
+.side button{
+  padding:20px;
+  width:150px;
+  margin-top: 25px;
   border-radius: 2px;
+  color: white;
+  background-color: #5DADE2;
 }
-.team img{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+footer{
+  margin-top:5%;
+  padding-bottom: 3%;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box1 box2 box3";
 }
-#other{
-  border-radius: 0;
-}
-footer p{
+.about{
   text-align: center;
-  margin-top:30px;
+  grid-area: box1;
+  padding:0% 0% 0% 15%;
+}
+.about h1,.contact h1{
+  text-align: left;
+  padding:20px;
+  font-size: 1.5em;
+}
+.about p{
+  margin: 8% 0%;
+  text-align: left;
+}
+.about h3{
+  text-align: left;
+  font-weight: lighter;
+}
+.contact{
+  padding-left: 20%;
+  text-align: center;
+  grid-area: box2;
+}
+.contact p{
+  margin: 3% 0%;
+  text-align: left;
+  font-style: italic;
+}
+.feedback{
+  text-align: center;
+  grid-area: box3;
+  margin-left: 15%;
+}
+.feedback form{
+  margin-top: 5%;
+}
+.feedback form input{
+  display: block;
+  padding:20px;
+  width:75%;
+  margin: 2%;
+  border-radius: 5px;
+}
+.feedback form input[type="submit"]{
+  color:#f3f3f3;
+  background-color: #3f3f3f;
+  width:50%;
+  text-transform: uppercase;
+  margin-top:15px;
 }
 a{
   text-decoration: none;
   color: black;
+}
+/* Animations */
+@keyframes top_to_bottom{
+  0%{
+    transform: translateY(-150px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }

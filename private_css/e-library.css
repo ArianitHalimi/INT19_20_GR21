@@ -3,54 +3,78 @@
 }
 header{
   display: flex;
+  width: 100%;
   background-color: #2ECC71;
-  width:100%;
+}
+h1{
+  font-size: 1em;
 }
 .logo{
-  padding:10px 20px;
   flex: 1;
+  padding:10px 20px;
 }
 .logo img{
   width:120px;
   height:30px;
 }
-nav{
-  flex:2;
+.middle{
+  flex: 2;
 }
-nav ul li{
+.middle ul li{
   display: inline-block;
+  text-align: center;
+  padding:0.5%;
+  color: white;
 }
-nav ul li img{
+.middle ul li:hover{
+  background-color: #198c19;
+}
+.middle ul li img{
   width:32px;
   height: 32px;
-  padding:10px 10px;
-  text-align: center;
 }
-nav a{
-  text-decoration: none;
+.middle ul li h1{
+    font-weight: lighter;
+    font-size: 0.8em;
 }
-.search{
+.profile{
   flex:1;
 }
-.search form {
+.profile ul li{
+  float: right;
+  padding: 0.5%;
+  display: inline-block;
+  color:white;
+  padding-left:20px;
+  padding-right:10px;
+}
+.profile ul li img{
+  width:32px;
+  height: 32px;
+}
+.profile ul li h1{
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+.profile form {
   display: inline-block;
   padding:15px;
 }
-.search form input[type="text"]{
+.profile form input[type="text"]{
   background-color: #2ECC71;
   border-bottom: 1px solid #f3f3f3;
   padding: 1px;
   border-radius: 3px;
   color: white;
 }
-.search form input[type="submit"]{
+.profile form input[type="submit"]{
   background-color: white;
   border: 1px solid #f3f3f3;
   color:#2ECC71;
   border-radius: 25px;
   padding: 0px 5px;
 }
-.search form input::placeholder{
+.profile form input::placeholder{
     color: white;
     padding: 5px;
 }
