@@ -1,48 +1,62 @@
 header{
-  width: 100%;
-  padding:20px;
-  text-align: center;
-  background-color: #f3f3f3;
-  border-bottom: 1px solid #333;
+  width: 90%;
+  margin:auto;
+  background-color: white;
 }
-#logo{
+header .top hr{
+  width: 100%;
+  height:8px;
+  background-color: #E74C3C;
+  margin-top: 2%;
+}
+header .logo{
+  width: 100%;
+}
+header .logo img{
+  margin: 10px 30px;
   width:120px;
-  height:30px;
+  height: 30px;
+}
+body{
+  background-color: #f3f3f3;
 }
 main{
-  width: 100%;
-  font-family: "Book Antiqua";
-  color:#333;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box1 box2";
+  height: 100%;
 }
-.box{
-  position: absolute;
-  width:60%;
-  height: 400px;
-  padding:40px;
-  top:50%;
-  left:50%;
-  margin-top: 20px;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  font-family: "Book Antiqua";
+section{
+  background-color: white;
 }
-main ul li{
-  list-style: none;
-  padding:20px;
-  border-top: 1px dashed #333;
-  color:#333;
+.faq{
+  grid-area: box1;
+  padding:5%;
+  padding-top:10%;
 }
-main ul li:hover{
+.faq h1{
+  font-size: 2em;
+  color:#E74C3C;
+  font-family: sans-serif;
+}
+.faq p{
+  margin-top: 3%;
+}
+.inner{
+  grid-area: box2;
+}
+.inner ul li{
+  padding:15px 30px;
+  background-color: #E74C3C;
+  color: white;
+  margin:2%;
+  border-radius: 5px;
+  width:85%;
+}
+.inner ul li:hover{
   font-size: 1.1em;
-}
-#more{
-  border-bottom: 1px dashed #333;
-}
-footer p{
-  width: 100%;
-  color:#333;
-  position: absolute;
-  bottom:0px;
-  margin:5px;
-  text-align: center;
+  cursor: pointer;
 }

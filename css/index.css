@@ -115,6 +115,9 @@ main{
   height: 100%;
   display: inline-block;
   vertical-align: top;
+  animation-name: left_to_right;
+  animation-duration: 3s;
+  animation-delay: -1s;
 }
 .img img {
   width: 100%;
@@ -126,6 +129,9 @@ main{
   display: inline-block;
   text-align: center;
   vertical-align: middle;
+  animation-name: right_to_left;
+  animation-duration: 3s;
+  animation-delay: -1s;
 }
 .side h1{
   margin:8% 0% 2% 0%;
@@ -205,6 +211,9 @@ a{
   text-decoration: none;
   color: black;
 }
+.contact a{
+  text-decoration: underline;
+}
 /* Animations */
 @keyframes top_to_bottom{
   0%{
@@ -212,5 +221,21 @@ a{
   }
   100%{
     transform: translateY(0px);
+  }
+}
+@keyframes left_to_right{
+  0%{
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+@keyframes right_to_left{
+  0%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0%);
   }
 }
