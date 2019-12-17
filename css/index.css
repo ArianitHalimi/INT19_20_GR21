@@ -62,9 +62,11 @@ main{
   border-radius: 2px;
   color: white;
   background-color: red;
+  transition: width 1s;
 }
 .box button:hover{
   cursor: pointer;
+  width: 200px;
 }
 .box button a{
   color: white;
@@ -147,6 +149,11 @@ main{
   border-radius: 2px;
   color: white;
   background-color: #5DADE2;
+  transition: width 3s;
+}
+.side button:hover{
+  background-color: #2874A6;
+  width:50%;
 }
 footer{
   margin-top:5%;
@@ -185,6 +192,14 @@ footer{
   text-align: left;
   font-style: italic;
 }
+.contact span{
+  text-decoration: underline;
+  color:black;
+}
+.contact span:hover{
+  color:red;
+  font-weight: bold;
+}
 .feedback{
   text-align: center;
   grid-area: box3;
@@ -206,6 +221,11 @@ footer{
   width:50%;
   text-transform: uppercase;
   margin-top:15px;
+  transition: width 1s;
+}
+.feedback form input[type="text"]:focus{
+  border:1px solid #000;
+  width:80%;
 }
 a{
   text-decoration: none;

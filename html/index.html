@@ -6,6 +6,16 @@
     <title>XLearn</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(()=>{
+        $('#submit').on('click',(event)=>{
+          event.preventDefault();
+          $('#submit').attr('value', 'Thank you for your feedback');
+          $('#submit').css('width',"75%");
+        });
+      });
+    </script>
   </head>
   <body>
     <!--To Do: Responsive design breakpoints fix in some cases, Cookies and Storage and animation-->
@@ -76,16 +86,15 @@
         <p>+383 44/49 xxx xxx</p>
         <p>info@xlearn.com</p>
         <h1>Connect with us</h1>
-        <p>Learn more <a href="MeetTheTeam.html">here</a></p>
+        <p>Learn more <a href="MeetTheTeam.html"><span>here</span></a></p>
       </div>
       <div class="feedback">
-        <form class="" action="feedback.html" method="post">
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Message">
-          <input type="submit" name="" value="Send Message">
+        <form class="" method="post">
+          <input type="text" placeholder="Name" required>
+          <input type="text" placeholder="Email" required>
+          <input type="text" placeholder="Message" required>
+          <input type="submit" name="" value="Send Message" id="submit">
         </form>
-
       </div>
     </footer>
   </body>
