@@ -164,30 +164,30 @@ margin: 10px 0px 10px 25%;
     </section>
 <section class="chat_nr1">
 <div class="chat1 darker" id="chat_s">
-  <img src="icon_image/person_2.png"  style="width:100%;">
+  <img src="person_2.png"  style="width:100%;">
   <p>Hi. How are you today?</p>
   <span class="time_left">11:00</span>
 </div>
 
 <div class="chat2 darker" id="chat_s">
-  <img src="icon_image/person_1.png" alt="person1"  style="width:100%;">
+  <img src="person_1.png" alt="person1"  style="width:100%;">
   <p>Hey! I'm fine</p>
   <span class="time_right">11:01</span>
 </div>
 
 <div class="chat1 darker" id="chat_s">
-  <img src="icon_image/person_2.png" alt="person2" style="width:100%;">
+  <img src="person_2.png" alt="person2" style="width:100%;">
   <p>Sweet! So, what do you wanna do today?</p>
   <span class="time_left">11:02</span>
 </div>
 
 <div class="chat2 darker" id="chat_s">
-  <img src="icon_image/person_1.png" alt="person1"  style="width:100%;">
+  <img src="person_1.png" alt="person1"  style="width:100%;">
   <p>About to watch new movie!</p>
   <span class="time_right">11:05</span>
 </div>
 <div class="chat1 darker" id="chat_s">
-  <img src="icon_image/person_2.png" alt="person2" style="width:100%;">
+  <img src="person_2.png" alt="person2" style="width:100%;">
   <p>Is it the new movie Star Wars: The Rise of Skywalker</p>
   <span class="time_left">11:07</span>
 </div>
@@ -197,7 +197,7 @@ margin: 10px 0px 10px 25%;
 <input class="text big" id="send_message_part" style="width:80%;" maxlength="255" type="text" value="" id="title" name="title" required="required"><button style="float:right;" onclick="send_chat_message();" type="submit" class="bluebutton2" value="Send" name="send">Send<img style="
                             margin-left: 5px;
                             margin-bottom: -5px;height:20px;
-                            " src="icon_image\arrow_icon_send.png"></button>
+                            " src="arrow_icon_send.png"></button>
 							</div>
 <script>
 
@@ -208,7 +208,7 @@ function send_chat_message(){
 	
 	 var today = new Date();
      var date = today.getHours()+':'+today.getMinutes();
-	$('.chat_nr1').append('<div class="chat2 darker"> <img src="icon_image/person_1.png" alt="person2" style="width:100%;"> <p>'+to_send+'</p> <span class="time_right">'+date+'</span></div>');
+	$('.chat_nr1').append('<div class="chat2 darker"> <img src="person_1.png" alt="person2" style="width:100%;"> <p>'+to_send+'</p> <span class="time_right">'+date+'</span></div>');
 	
 	$('#send_message_part').val("");
 	}
