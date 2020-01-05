@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<<<<<<< HEAD
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -392,5 +393,282 @@
       </section>
     </div>
     <script src="../src/newjavascript.js"></script>
+=======
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>XLearn</title>
+	<style>
+	.form_message{
+	background-color:#f8f8f8;
+	 width:50%;
+	 margin: 10px 0px 10px 25%;
+	 padding: 10px 10px 10px 10px
+	}
+	
+	.msgbutton{
+		  width: 100px;
+		  margin: 3px 7px;
+		  padding: 5px;
+		  color: #fff;
+		  border-style: none;
+	}
+	input.text.big {
+    height: 30px;
+    width: 50%;
+    border: solid 1px #9a9a9a;
+    padding: 2px 4px;
+    color: #333;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+}
+textarea {
+    border: solid 1px #bbb;
+    color: #333;
+    min-width: 567px;
+}
+.bluebutton {
+    text-decoration: none;
+    background: #0f6f74;
+    padding: 5px 15px 5px 25px;
+    margin-top: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    display: inline;
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+	float:right;
+}
+.menumores {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 155px;
+}
+
+.forliwewin {
+  float: left;
+  border-right:2px solid #bbb;
+  
+}
+
+.forliwewin:last-child {
+  border-right: none;
+}
+
+.forliwewin a {
+  display: block;
+  color: white;
+  padding: 14px 16px 14px 14px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+th{
+width:120px;
+}
+td{
+text-align:center;
+
+}
+#markrow{
+  margin-left:20%;
+}
+  </style>
+    <script>
+  
+       var startprogres = 0;
+      function sendmessage(){
+        startprogres = 0;
+       var fullname = $('#fullname').val();
+       var title = $('#title').val();
+       var  Message = $('#Message').val();
+        // check if are empty
+        if(fullname == ''){
+            alert('Full name can\'t be empty');
+            return;
+        }
+        if(title == ''){
+            alert('Title can\'t be empty');
+            return;
+        }
+        if(Message == ''){
+            alert('Message can\'t be empty');
+            return;
+        }
+        // split full name
+        split_full_name = fullname.split(" ");
+       
+        // insert date y/m/d
+          var today = new Date();
+          var date = today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();
+
+         var limited_char_title = "";
+         // length of the title
+        for(var i=0;i<title.length && i< 10;i++){
+          limited_char_title += title[i];
+        }
+        // insert ... if the length more than 10
+        if(title.length > 10){
+          limited_char_title += "...";
+        }
+          // insert new row on the list 
+        $('.listofmessage').prepend('<tr><td class="id_message">'+(parseInt($('.id_message:first').text()) + 1)+'</td><td>'+date+'</td><td>'+fullname+' ('+split_full_name[0][0].toUpperCase()+'.'+split_full_name[1][0].toUpperCase()+')</td><td>'+limited_char_title+'</td><td><progress class="startingcounter" max="100" value="0">0</progress><td class="sendingmsg">Sending...</td><tr>');
+          loadprogresscomand(); // load next part of the page 
+      }
+
+      function loadprogresscomand(){
+        
+        $(".sendingmsg").css("background-color","yellow");
+        myInterval = setInterval(function(){},100); // load interval
+        clearInterval(myInterval); // clear interval
+        // input new interval for the progress bar
+        
+         x = 0;
+              myInterval = setInterval(function(){
+                
+                if(startprogres == 0){
+                x = x + 2;
+                $('.startingcounter').val(x) ;
+                // check if x is 100 or more 
+                if(x >= 100){
+                   $( "progress" ).removeClass( "startingcounter" );
+                  
+                    $(".sendingmsg").text("Sended");
+                    $(".sendingmsg").css("background-color","");
+                    $( "td" ).removeClass( "sendingmsg" );
+                    clearInterval(myInterval); // stop when is 100 ore more 
+                    startprogres = 1;
+                    
+                }
+              }},50);
+          
+        
+      }
+
+$(document).ready(function(){
+      $("#fullname").on("change keydown keyup", function(e) {
+    	asdmode = $('#fullname').val();
+     spliter = asdmode.split(" ");
+     if(spliter[1][0] == null){
+      $('.checkforfullname').html('<a style="color:red;"> Last-Name is missing</a>');
+
+      }else if(spliter[0][0] == null || asdmode == ""){
+       $('.checkforfullname').html('<a style="color:red;"> Fist-Name is missing</a>');
+      }else{
+        $('.checkforfullname').text(' ' + asdmode +' ('+spliter[0][0].toUpperCase()+'.'+spliter[1][0].toUpperCase()+')');
+      }
+    });});
+      </script>
+  </head>
+  <body>
+	<section>
+    <div>
+	<center>
+<ul class="menumores">
+  <li class="forliwewin"><a  href="chat.html">Chat</a></li>
+  <li class="forliwewin"><a class="active" href="mail.html">Messages</a></li>
+</ul>
+</center>
+</div>
+      <h3 id="markrow">Dergo Message</h3>
+      <div class="form_message">
+      <div >
+	<style>
+  label{
+  font-weight:bold;
+  }
+  </style>
+				<fieldset>
+          <!-- titile_icon.png -->
+          <label><img style="/*width:15px;*/height:16px;margin-bottom: -3px;" src="full_name_icon.jpg"> Full Name</label> 
+									<p>
+							 
+							 <input class="text big" id="fullname" type="text" value="" name="fullname" required="required"><a class="checkforfullname"></a>
+					</p> <label><img style="/*width:15px;*/height:16px;margin-bottom: -3px;" src="titile_icon.png"> Title</label> 
+                    <p>
+                      <!-- chat-alt-outline.png -->
+							 <input class="text big" maxlength="29" type="text" value="" id="title" name="title" required="required">
+					</p>	 <label><img style="/*width:15px;*/height:16px;margin-bottom: -3px;" src="chat-alt-outline.png"> Message</label>
+                    <p>
+						
+							 <textarea name="message" id="Message" maxlength="500" rows="6" required="required"></textarea>
+					</p>
+				                 
+											  	<button style="float:right;" onclick="sendmessage();" type="submit" class="bluebutton" value="Send" name="send">Send<img style="
+                            margin-left: 5px;
+                            margin-bottom: -5px;
+                            " src="send.png"></button>
+
+
+				</fieldset>
+			
+        </div>
+        <div>
+		<table>
+              <br>
+                <thead>
+                    <tr>
+                        <th scope="col" title="Id">MSG-ID</th>
+                        <th scope="col" title="Date">Data</th>
+                        <th scope="col" style="width:300px" title="Customer">To</th>
+                        <th scope="col" style="width:300px" title="Country">Title</th>
+                        <th scope="col" title="Progress">Progresi</th>
+                        <th scope="col" title="Status">Statusi</th>
+                        
+                    </tr>
+                </thead>
+                <tbody class="listofmessage">
+                   
+                    <tr>
+                        <td class="id_message">4</td>
+                        <td>2019/2/3</td>
+                        <td>Elon Musk (E.M)</td>
+                        <td>SpaceX code</td>
+                        <td><progress max="100" value="100">100%</progress>
+                        <td>Sended</td>    
+                    </tr>
+					                    <tr>
+                        <td>3</td>
+                        <td>2000/2/12</td>
+                        <td>Artan Vrajolli (A.V)</td>
+                        <td>Wikipedia Title</td>
+                        <td><progress max="100" value="100">100%</progress>
+                        <td>Sended</td>    
+                    </tr>
+					 <tr>
+                        <td>2</td>
+                        <td>2013/4/5</td>
+                        <td>Arianit Halimi (A.H)</td>
+                        <td>Node js error</td>
+                        <td><progress max="100" value="25">25%</progress>
+                        <td>Failed</td>    
+                    </tr>
+										 <tr>
+                        <td>1</td>
+                        <td>2017/2/3</td>
+                        <td>Marco polo (M.P)</td>
+                        <td>the char is mi...</td>
+                        <td><progress max="100" value="0">0%</progress>
+                        <td>Not Sended</td>    
+                    </tr>
+                 
+                </tbody>
+            </table>
+		
+		</div>
+      </div>
+    </section>
+
+    <footer><p id="markrow">XLearn&copy - All Right Reserved</p></footer>
+>>>>>>> d145dd5c0bcae96b4a529022ef5ee77d6dbb4f45
   </body>
 </html>
