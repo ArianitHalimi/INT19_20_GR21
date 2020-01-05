@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,600,700|Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="newcss.css" />
+    <title>XLearn</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="avatar.png" width="50" class="admin-image" />
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Studenti</h2>
+            <p class="card-subtitle">Administrator</p>
+          </div>
+        </div>
+        <form class="search-form">
+          <input class="search-input" type="text" placeholder="Search" />
+          <button type="button" class="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa-tachometer-alt"></i
+              ><span class="nav-link-text">Dashboard</span>
+             </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="VA.html" class="nav-link"
+              ><svg height="16px" viewBox="0 -4 512 511" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="m389.375 205.300781h71.425781c23.558594-.007812 42.65625-19.105469 42.664063-42.667969v-119.464843c-.007813-23.5625-19.105469-42.660157-42.664063-42.667969h-170.667969c-23.558593.007812-42.65625 19.105469-42.667968 42.667969v119.464843c.011718 23.5625 19.109375 42.660157 42.667968 42.667969h24.578126" fill="#955ba5"/><path d="m315.734375 196.765625-8.535156 68.269531 93.867187-68.269531" fill="#955ba5"/><path d="m324.265625 102.898438c0 9.425781-7.640625 17.066406-17.066406 17.066406s-17.066407-7.640625-17.066407-17.066406c0-9.425782 7.640626-17.066407 17.066407-17.066407s17.066406 7.640625 17.066406 17.066407zm0 0" fill="#f3d55b"/><path d="m392.535156 102.898438c0 9.425781-7.644531 17.066406-17.070312 17.066406-9.425782 0-17.066406-7.640625-17.066406-17.066406 0-9.425782 7.640624-17.066407 17.066406-17.066407 9.425781 0 17.070312 7.640625 17.070312 17.066407zm0 0" fill="#f3d55b"/><path d="m460.800781 102.898438c0 9.425781-7.640625 17.066406-17.066406 17.066406s-17.066406-7.640625-17.066406-17.066406c0-9.425782 7.640625-17.066407 17.066406-17.066407s17.066406 7.640625 17.066406 17.066407zm0 0" fill="#f3d55b"/><g fill="#2fa8cc"><path d="m8.535156 393.035156c-4.714844 0-8.535156-3.824218-8.535156-8.535156v-17.066406c0-4.714844 3.820312-8.535156 8.535156-8.535156 4.710938 0 8.53125 3.820312 8.53125 8.535156v17.066406c0 4.710938-3.820312 8.535156-8.53125 8.535156zm0 0"/><path d="m34.132812 401.566406c-4.710937 0-8.53125-3.820312-8.53125-8.53125v-34.136718c0-4.710938 3.820313-8.53125 8.53125-8.53125 4.714844 0 8.535157 3.820312 8.535157 8.53125v34.136718c0 4.710938-3.820313 8.53125-8.535157 8.53125zm0 0"/><path d="m136.535156 401.566406c-4.714844 0-8.535156-3.820312-8.535156-8.53125v-34.136718c0-4.710938 3.820312-8.53125 8.535156-8.53125 4.710938 0 8.53125 3.820312 8.53125 8.53125v34.136718c0 4.710938-3.820312 8.53125-8.53125 8.53125zm0 0"/><path d="m68.265625 418.632812c-4.710937 0-8.53125-3.820312-8.53125-8.53125v-68.269531c0-4.710937 3.820313-8.53125 8.53125-8.53125 4.714844 0 8.535156 3.820313 8.535156 8.53125v68.269531c0 4.710938-3.820312 8.53125-8.535156 8.53125zm0 0"/><path d="m102.398438 418.632812c-4.710938 0-8.53125-3.820312-8.53125-8.53125v-68.269531c0-4.710937 3.820312-8.53125 8.53125-8.53125 4.714843 0 8.535156 3.820313 8.535156 8.53125v68.269531c0 4.710938-3.820313 8.53125-8.535156 8.53125zm0 0"/><path d="m170.667969 435.699219c-4.714844 0-8.535157-3.820313-8.535157-8.53125v-102.402344c0-4.710937 3.820313-8.53125 8.535157-8.53125 4.710937 0 8.53125 3.820313 8.53125 8.53125v102.402344c0 4.710937-3.820313 8.53125-8.53125 8.53125zm0 0"/><path d="m204.800781 452.765625c-4.714843 0-8.535156-3.820313-8.535156-8.53125v-136.535156c0-4.710938 3.820313-8.53125 8.535156-8.53125 4.710938 0 8.53125 3.820312 8.53125 8.53125v136.535156c0 4.710937-3.820312 8.53125-8.53125 8.53125zm0 0"/><path d="m238.933594 503.964844c-4.714844 0-8.535156-3.820313-8.535156-8.53125v-238.933594c0-4.710938 3.820312-8.535156 8.535156-8.535156 4.710937 0 8.53125 3.824218 8.53125 8.535156v238.933594c0 4.710937-3.820313 8.53125-8.53125 8.53125zm0 0"/><path d="m503.464844 393.035156c-4.710938 0-8.53125-3.824218-8.53125-8.535156v-17.066406c0-4.714844 3.820312-8.535156 8.53125-8.535156 4.714844 0 8.535156 3.820312 8.535156 8.535156v17.066406c0 4.710938-3.820312 8.535156-8.535156 8.535156zm0 0"/><path d="m477.867188 401.566406c-4.714844 0-8.535157-3.820312-8.535157-8.53125v-34.136718c0-4.710938 3.820313-8.53125 8.535157-8.53125 4.710937 0 8.53125 3.820312 8.53125 8.53125v34.136718c0 4.710938-3.820313 8.53125-8.53125 8.53125zm0 0"/><path d="m375.464844 401.566406c-4.710938 0-8.53125-3.820312-8.53125-8.53125v-34.136718c0-4.710938 3.820312-8.53125 8.53125-8.53125 4.714844 0 8.535156 3.820312 8.535156 8.53125v34.136718c0 4.710938-3.820312 8.53125-8.535156 8.53125zm0 0"/><path d="m443.734375 418.632812c-4.714844 0-8.535156-3.820312-8.535156-8.53125v-68.269531c0-4.710937 3.820312-8.53125 8.535156-8.53125 4.710937 0 8.53125 3.820313 8.53125 8.53125v68.269531c0 4.710938-3.820313 8.53125-8.53125 8.53125zm0 0"/><path d="m409.601562 418.632812c-4.714843 0-8.535156-3.820312-8.535156-8.53125v-68.269531c0-4.710937 3.820313-8.53125 8.535156-8.53125 4.710938 0 8.53125 3.820313 8.53125 8.53125v68.269531c0 4.710938-3.820312 8.53125-8.53125 8.53125zm0 0"/><path d="m341.332031 435.699219c-4.710937 0-8.53125-3.820313-8.53125-8.53125v-102.402344c0-4.710937 3.820313-8.53125 8.53125-8.53125 4.714844 0 8.535157 3.820313 8.535157 8.53125v102.402344c0 4.710937-3.820313 8.53125-8.535157 8.53125zm0 0"/><path d="m307.199219 452.765625c-4.710938 0-8.53125-3.820313-8.53125-8.53125v-136.535156c0-4.710938 3.820312-8.53125 8.53125-8.53125 4.714843 0 8.535156 3.820312 8.535156 8.53125v136.535156c0 4.710937-3.820313 8.53125-8.535156 8.53125zm0 0"/><path d="m273.066406 503.964844c-4.710937 0-8.53125-3.820313-8.53125-8.53125v-238.933594c0-4.710938 3.820313-8.535156 8.53125-8.535156 4.714844 0 8.535156 3.824218 8.535156 8.535156v238.933594c0 4.710937-3.820312 8.53125-8.535156 8.53125zm0 0"/></g></svg>
+              <span class="nav-link-text">Voice Assistant</span>
+            </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+               ><img src="speech-bubble.png"/>
+              <span class="nav-link-text">Chat and Mail</span>
+              <i class="fas fa-angle-right"></i
+            ></a>
+            <ul class="subnav-list">
+              <li class="subnav-item">
+                <a href="chat.html" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span>Chat</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="mail.html" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span>Mail</span></a
+                >
+              </li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="https://sites.google.com/site/dokleatifiek/literatura?fbclid=IwAR1mPmw08f5MbnI_NqiYdb1x99CWe2a2w6kVkHO1MzoP9Fhb8j_STo_Yx6g" class="nav-link"
+               ><img src="books.png"/>
+              <span class="nav-link-text">Literature</span>
+             </a>
+            
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img src="map.png"/>
+              <span class="nav-link-text">Maps</span>
+              <i class="fas fa-angle-right"></i
+            ></a>
+            <ul class="subnav-list">
+              <li class="subnav-item">
+                <a href="https://www.google.com/maps?hl=en&tab=rl1" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span>Google Maps</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="https://www.google.com/maps/place/Universiteti+i+Prishtin%C3%ABs/@42.6486031,21.1649472,17z/data=!4m8!1m2!2m1!1sfaklteti+teknik!3m4!1s0x0:0x76c9353194f18686!8m2!3d42.6484074!4d21.1671319?hl=en" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span>Universiteti i Prishtinës</span></a
+                >
+              </li>
+              <li class="subnav-item">
+                <a href="https://www.google.com/maps/place/Fakulteti+Teknik/@42.6486031,21.1649472,17z/data=!4m8!1m2!2m1!1sfaklteti+teknik!3m4!1s0x0:0x7f0893730efce187!8m2!3d42.6487907!4d21.1671507?hl=en" class="subnav-link"
+                  ><i class="far fa-circle"></i> <span>Fakuteti Teknik</span></a
+                >
+              </li>
+              
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="bottom-list">
+          
+          
+          <li class="bottom-item">
+            <a href="#" class="bottom-link"
+              ><i class="fas fa-power-off"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="main-section">
+        <header class="header">
+          <h1 class="heading">Dashboard</h1>
+        </header>
+      </section>
+    </div>
+    <script src="newjavascript.js"></script>
+  </body>
+</html>
