@@ -1,77 +1,62 @@
-header{
-  display: flex;
-  width: 100%;
-  background-color: #E74C3C;
+body{
+  background-image: url(../private_img/images/p.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin: 0;
+  padding: 0;
+  
 }
-h1{
-  font-size: 1em;
+#app-container{
+  width: 800px;
+  margin: auto;
 }
-.logo{
-  flex: 1;
-  padding:10px 20px;
-}
-.logo img{
-  width:120px;
-  height:30px;
-}
-.middle{
-  flex: 2;
-}
-.middle ul li{
-  display: inline-block;
+#app-container h1 {
+  font-family: 'Poppins';
+  font-size: 54px;
+  color: white;
+  text-shadow: 5px 3px gray; 
   text-align: center;
-  padding:0.5%;
-  color: white;
+  letter-spacing: 15px;
 }
-.middle ul li:hover{
-  background-color: #ff7b7b;
+#input-container textarea{
+  width: 100%;
+  height: 200px;
+  resize: none;
+  background-color: rgba(255,255,255,0.7);
+  box-shadow: 1px 1px 5px black;
+  border: 1px solid white;
+  padding: 25px;
+  font-family: "Merriweather",serif;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  
+
 }
-.middle ul li img{
-  width:32px;
-  height: 32px;
+#control-container{
+  margin: 25px;
+  text-align: center;
 }
-.middle ul li h1{
-    font-weight: lighter;
-    font-size: 0.8em;
+#play-btn{
+  width: 100px;
+  background-color: rgba(255,255,255,0.5);
+  padding: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  border: 2px solid black;
+  font-family: "Popins",sans-serif;
+  border-radius: 5px;
 }
-.profile{
-  flex:1;
+#play-btn:hover{
+  background-color: rgba(255,255,255, .7);
+  
 }
-.profile ul li{
-  float: right;
-  padding: 0.5%;
-  display: inline-block;
-  color:white;
-  padding-left:20px;
-  padding-right:10px;
-}
-.profile ul li img{
-  width:32px;
-  height: 32px;
-}
-.profile ul li h1{
-  font-weight: lighter;
-  font-size: 0.8em;
-}
-.profile form {
-  display: inline-block;
-  padding:15px;
-}
-.profile form input[type="text"]{
-  background-color: #E74C3C;
-  border-bottom: 1px solid #f3f3f3;
-  padding: 1px;
-  border-radius: 3px;
-  color: white;
-}
-.profile form input[type="submit"]{
-  background-color: white;
-  border: 1px solid #f3f3f3;
-  color:#E74C3C;
-  border-radius: 25px;
-  padding: 0px 5px;
-}
-.profile form input::placeholder{
-    color: white;
-    padding: 5px;
+#play-btn:disabled{
+  cursor: not-allowed;
+  border: 2px solid gray;
+  background-color: rgba(255,255,255,0.5);
 }
